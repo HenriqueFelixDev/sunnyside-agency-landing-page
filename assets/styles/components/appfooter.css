@@ -1,0 +1,23 @@
+.appfooter {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: var(--light-cyan);
+    color: var(--dark-desaturated-cyan);
+}
+
+.appfooter__social-media, .appfooter__menu {
+    display: flex;
+    justify-content: center;
+}
+
+.appfooter__menu {
+    color: var(--dark-moderate-cyan);
+    gap: 2rem;
+}
+
+.appfooter__social-media {
+    gap: 1rem;
+}

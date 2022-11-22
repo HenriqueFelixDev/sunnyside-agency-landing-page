@@ -1,0 +1,33 @@
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.testimonial-card__photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.testimonial-card__text {
+    color: var(--very-dark-grayish-blue);
+}
+
+.testimonial-card__name {
+    font: bold 1.2rem var(--title-font);
+}
+
+.testimonial-card__job {
+    font-size: 0.9rem;
+    color: var(--grayish-blue);
+}
+
+@media (min-width: 768px) {
+    .testimonial-card__text {
+        margin: 2rem auto;
+    }
+}

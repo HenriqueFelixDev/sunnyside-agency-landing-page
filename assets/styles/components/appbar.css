@@ -1,0 +1,57 @@
+.appbar {
+    position: fixed;
+    inset: 0 0 auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: var(--white);
+    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.appbar--filled {
+    background-color: var(--blue);
+}
+
+.appbar--filled,
+.appbar__menu {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.appbar__menu {
+    display: none;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    right: 2rem;
+}
+
+.appbar__menu--open {
+    display: block;
+}
+
+.appbar__menu-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .appbar {
+        padding: 2rem;
+    }
+
+    .appbar--filled {
+        padding: 0.5rem 2rem;
+    }
+
+    .appbar__menu-button {
+        display: none;
+    }
+
+    .appbar__menu {
+        display: block;
+        position: static;
+        box-shadow: none;
+    }
+}
